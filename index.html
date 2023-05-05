@@ -17,28 +17,39 @@
   <body>
     <div class="card">
       <section class="hero">
-        <img class="hero__img" src="images/image-header-mobile.jpg" alt="" />
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="images/image-header-desktop.jpg"
+          />
+          <source
+            media="(max-width: 465px)"
+            srcset="images/image-header-mobile.jpg"
+          />
+          <img src="images/image-header-mobile.jpg" />
+        </picture>
+        <!-- <img class="hero__img" src="images/image-header-mobile.jpg" alt="" /> -->
       </section>
       <section class="main">
-        <h1 class="header header__title">
-          Get <span>in sights</span> that help your business grow.
+        <h1 class="card__title">
+          Get <span>insights</span> that help your business grow.
         </h1>
-        <p>
+        <p class="card__paragraph">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
         <div class="stats__container">
           <div class="stats">
             <h2 class="stats__number">10k+</h2>
-            <p>companies</p>
+            <p class="stats__paragraph">companies</p>
           </div>
           <div class="stats">
             <h2 class="stats__number">314</h2>
-            <p>templates</p>
+            <p class="stats__paragraph">templates</p>
           </div>
-          <div class="stats__container">
+          <div class="stats">
             <h2 class="stats__number">12m+</h2>
-            <p>queries</p>
+            <p class="stats__paragraph">queries</p>
           </div>
         </div>
       </section>
