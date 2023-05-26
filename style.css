@@ -42,7 +42,7 @@ p {
 
 .card {
   background-color: hsl(244, 38%, 16%);
-  width: 300px;
+  width: 70%;
   box-sizing: border-box;
 }
 
@@ -54,7 +54,8 @@ p {
   width: 100%;
   height: auto;
   display: block;
-  opacity: 0.5;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
 }
 
 .card__body {
